@@ -17,5 +17,5 @@ class Settings:
         # 外星人设置
         self.alien_speed = 1.0
         self.fleet_drop_speed = 10
-        # fleet_direction = 1 表示向左移
+        # fleet_direction = 1 表示向右移，为-1表示往左移
         self.fleet_direction = 1
