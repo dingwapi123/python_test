@@ -83,6 +83,11 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
 
+        if not self.aliens:
+            # 删除现有的子弹并新建一群外星人
+            self.bullets.empty()
+            self._create_fleet
+
     def _update_aliens(self):
         """检查是否有外星人位于屏幕边缘，更新外星人群中所有外星人的位置"""
         self._check_fleet_edges()
